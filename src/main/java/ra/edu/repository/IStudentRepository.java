@@ -20,13 +20,13 @@ public interface IStudentRepository extends JpaRepository<Student, String> {
     // findBy, findAllBy, ExistBy, CountBy, ...
 
     // tìm kiếm theo tên hoặc họ
-    List<Student> findByLastNameOrFirstName(String lastName, String firstName);
+//    List<Student> findByLastNameOrFirstName(String lastName, String firstName);
     // Xóa tất cả sinh viên có họ trùng khớp
     //    @Transactional
     //    @Modifying // định nghĩa lại
     //    @Query("DELETE FROM Student s WHERE s.lastName = :lastName")
     //    void deleteByLastName(@Param("lastName") String lastName);
 
-    Page<Student> findByFirstNameContainingIgnoreCase(String firstName, Pageable pageable);
+//    Page<Student> findByFirstNameContainingIgnoreCase(String firstName, Pageable pageable);
 
 }
